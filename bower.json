@@ -1,0 +1,7 @@
+{
+  "name": "test_job",
+  "dependencies": {
+    "normalize-css": "^8.0.0",
+    "flexboxgrid": "https://github.com/kristoferjoseph/flexboxgrid.git#^6.3.2"
+  }
+}
