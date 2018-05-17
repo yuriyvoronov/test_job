@@ -2,6 +2,9 @@
   "name": "test_job",
   "dependencies": {
     "normalize-css": "^8.0.0",
-    "flexboxgrid": "https://github.com/kristoferjoseph/flexboxgrid.git#^6.3.2"
+    "flexboxgrid": "https://github.com/kristoferjoseph/flexboxgrid.git#^6.3.2",
+    "owl.carousel": "https://github.com/OwlCarousel2/OwlCarousel2.git#^2.3.4",
+    "jquery": "^3.3.1",
+    "animate.css": "https://github.com/daneden/animate.css.git#^3.5.2"
   }
 }

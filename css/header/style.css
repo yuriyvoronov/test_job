@@ -10,9 +10,9 @@
     .header-container__logo {
       position: absolute;
       top: 0;
-      left: 0;
       background: #fff;
-      padding: 21px 48px; }
+      padding: 21px 48px;
+      z-index: 2; }
   .header-nav {
     margin-left: 200px;
     height: 100%; }
@@ -37,3 +37,48 @@
         display: -o-flex;
         display: flex;
         align-items: center; }
+        .header-nav ul li a {
+          font-family: OpenSansLight;
+          font-size: 20px;
+          color: #fff;
+          text-decoration: none;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 1px; }
+          .header-nav ul li a:hover {
+            background: rgba(0, 0, 0, 0.2); }
+    .header-nav__link {
+      padding: 23px 15px 21px; }
+    .header-nav__search {
+      width: 21px;
+      height: 20px;
+      padding: 25px;
+      background: #ededed; }
+      .header-nav__search:hover {
+        background: #898989; }
+  .header-steam {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: OpenSansBold;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #ffffff; }
+    .header-steam__link {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 41px 12px 14px;
+      background-color: #30b5d8;
+      border-left: 2px solid #e3e3e3; }
+      .header-steam__link:hover {
+        background-color: #207389; }
