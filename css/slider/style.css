@@ -1,6 +1,6 @@
 .slider-item {
   width: 100%;
-  height: 560px;
+  min-height: 560px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -9,14 +9,20 @@
   justify-content: center;
   align-items: center; }
   .slider-item-1 {
-    background: url(../../img/slider_bg_1.jpg); }
+    background: url(../../img/slider_bg_1.jpg) no-repeat;
+    background-size: cover; }
   .slider-item-2 {
-    background: url(../../img/slider_bg_2.jpg); }
+    background: url(../../img/slider_bg_2.jpg) no-repeat;
+    background-size: cover; }
+  .slider-item-3 {
+    background: url(../../img/slider_bg_3.jpg) no-repeat;
+    background-size: cover; }
 
 .slider-content {
-  max-width: 1020px;
-  padding: 32px;
-  background-color: #29abcd; }
+  width: 962px;
+  padding: 27px 34px;
+  background-color: #29abcd;
+  margin: 181px auto 71px; }
   .slider-content h2 {
     font-family: OpenSansBold;
     font-size: 30px;
@@ -25,9 +31,10 @@
     line-height: 1.33;
     letter-spacing: normal;
     text-align: left;
-    color: #000000; }
+    color: #000000;
+    margin: 0; }
   .slider-content p {
-    font-family: OpenSansRegular;
+    font-family: OpenSansLight;
     font-size: 18px;
     font-weight: 300;
     font-style: normal;
@@ -35,4 +42,43 @@
     line-height: 1.44;
     letter-spacing: normal;
     text-align: left;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 0; }
+
+.slider-thumbs {
+  margin: 0px;
+  position: absolute;
+  margin-top: -125px;
+  width: initial;
+  right: 00px; }
+  .slider-thumbs ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    align-content: flex-end; }
+    .slider-thumbs ul li {
+      display: inline-block;
+      list-style: none; }
+  .slider-thumbs img {
+    width: 50px; }
+
+.slider-horizon-list:before {
+  content: "";
+  display: inline-block;
+  width: 160px;
+  height: 100px;
+  background: url(../../img/thumb_bg_1.png); }
+
+.slider-vertical-list {
+  width: 160px;
+  justify-content: flex-end;
+  flex-direction: column;
+  float: right; }
+  .slider-vertical-list:after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 100px;
+    background: url(../../img/thumb_bg_2.png); }
