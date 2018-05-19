@@ -27,6 +27,11 @@
 			background: url(../../img/slider_bg_3.jpg) no-repeat; 
 			background-size: cover;
 		}
+		&-4
+		{
+			background: url(../../img/slider_bg_4.jpg) no-repeat; 
+			background-size: cover;
+		}
 		
 	}
 	&-content
@@ -35,6 +40,7 @@
 			padding: 27px 34px;
 			background-color: #29abcd;
 			margin: 181px auto 71px;
+			position: relative;
 			h2
 			{
 				font-family: OpenSansBold;
@@ -67,9 +73,10 @@
 		
 		margin: 0px;
 		position: absolute;
-		margin-top: -125px;
+		margin-top: -127px;
 		width: initial;
-		right: 00px;
+		right: -160px;
+		
 		ul
 		{
 			padding: 0;
@@ -80,7 +87,21 @@
 			li
 			{
 				display: inline-block;
-			list-style: none;
+				list-style: none;
+				background: #000;
+				img:hover
+				{
+					opacity: 0.7;
+					transition: all .3s ease;
+				}
+				&.active
+				{
+					background: #29abcd;
+					& img
+					{
+						opacity: 0.7;
+					}
+				}
 			}
 		}
 		img
