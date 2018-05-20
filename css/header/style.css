@@ -5,8 +5,7 @@
   bottom: 0;
   padding: 0; }
   .header-container {
-    height: 100%;
-    max-width: 1380px; }
+    height: 100%; }
     .header-container__logo {
       position: absolute;
       top: 0;
