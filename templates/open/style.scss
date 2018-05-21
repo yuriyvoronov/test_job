@@ -2,61 +2,28 @@ $gold: #f2ca5b;
 $silver: #bebebe;
 $bronze: #cd7f32;
 
-.closed
+.open
 {
-	background:#fff;
+	background: #29abcd; 
 	position: relative;
-	&:before
-	{
-		    content: " ";
-    		width: 100%;
-    		height: 180px;
-    		max-width: 719px;
-    		background: url(../../img/rectangle-bg.png) no-repeat;
-    		position: absolute;
-    		top: -67px;
-    		z-index: 2;
-	}
-	&-nav
-	{
-		padding-top: 40px;
-		
-		h2
-		{
-			display: inline-block;
-			font-family: OpenSansLight;
-  			font-size: 25px;
-  			font-style: normal;
-  			font-stretch: normal;
-  			line-height: 0.96;
-  			letter-spacing: normal;
-  			text-align: left;
-  			color: #272727;
-			margin: 0;
-			
-		}
-		a
-		{
-			margin-left: 15px;
-			
-			font-family: OpenSansLight;
-  			font-size: 25px;
-  			font-style: normal;
-  			font-stretch: normal;
-  			line-height: 0.96;
-  			letter-spacing: normal;
-  			text-align: left;
-  			color: #656565;
-			text-decoration: none;
-			&.selected
-			{
-				font-weight: 600;
-				color: #33282c;
-				padding: 15px 41px 11px;
-				border-radius: 3px;
-  				background-color: #f2ca5b;
-			}
-		}
+	background: rgba(48,127,148,1);
+    background: -moz-linear-gradient(left, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(48,127,148,1)), color-stop(55px, rgba(41,171,205,1)), color-stop(100%, rgba(41,171,205,1)));
+    background: -webkit-linear-gradient(left, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+    background: -o-linear-gradient(left, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+    background: -ms-linear-gradient(left, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+    background: linear-gradient(to right, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#307f94', endColorstr='#29abcd', GradientType=1 );
+	&:after {
+    content: '';
+  
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    border-top: 30px solid #fff;
+    border-right: 70px solid transparent;
+	
 	}
 	&-bar
 	{
@@ -68,11 +35,9 @@ $bronze: #cd7f32;
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		
-		border-bottom: 5px solid #f7f7f7;;
 		h2
 		{
-			font-family: OpenSansBold;
+			font-family: OpenSansExtraBold;
   			font-size: 40px;
   			font-weight: 800;
   			font-style: normal;
@@ -80,28 +45,29 @@ $bronze: #cd7f32;
   			line-height: 0.6;
   			letter-spacing: normal;
   			text-align: left;
-  			color: #272727;
+  			color: #fff;
 			display: inline-block;
+			text-transform: uppercase;
 		}
 		a
 		{
-			font-family: OpenSansLight;
 			margin-left: 20px;
-  			font-size: 19px;
+			font-family: OpenSansLight;
+  			font-size: 18px;
   			font-weight: 300;
   			font-style: normal;
   			font-stretch: normal;
   			line-height: 1.2;
   			letter-spacing: normal;
   			text-align: left;
-  			color: #30b5d8;
-			border-bottom: 1px dashed #30b5d8;
+  			color: #fff;
+			border-bottom: 1px dashed #fff;
 			text-decoration: none;
 			position: relative;
     		top: -7px;
 		}
 		select
-		{ 
+		{
 			width: 350px;
  			height: 50px;
 			padding-left: 22px;
@@ -289,7 +255,7 @@ $bronze: #cd7f32;
 		width: 260px;
 		padding: 28px 0px;
 		text-align: center;
-		background: #bebebe;
+		background: $gold;
 		color: #fff;
 		font-family: OpenSansExtraBold;
 		font-size: 30px;
