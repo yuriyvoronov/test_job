@@ -8,14 +8,31 @@
   background: -o-linear-gradient(left, #307f94 0%, #29abcd 55px, #29abcd 100%);
   background: -ms-linear-gradient(left, #307f94 0%, #29abcd 55px, #29abcd 100%);
   background: linear-gradient(to right, #307f94 0%, #29abcd 55px, #29abcd 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#307f94', endColorstr='#29abcd', GradientType=1 ); }
-  .open:after {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#307f94', endColorstr='#29abcd', GradientType=1 );
+  padding-bottom: 10px; }
+  .open:before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     border-top: 30px solid #fff;
     border-right: 70px solid transparent; }
+  .open:after {
+    content: '';
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    background: #307f94;
+    background: -moz-linear-gradient(left, #307f94 0%, #29abcd 55px, #29abcd 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #307f94), color-stop(55px, #29abcd), color-stop(100%, #29abcd));
+    background: -webkit-linear-gradient(left, #307f94 0%, #29abcd 55px, #29abcd 100%);
+    background: -o-linear-gradient(left, #307f94 0%, #29abcd 55px, #29abcd 100%);
+    background: -ms-linear-gradient(left, #307f94 0%, #29abcd 55px, #29abcd 100%);
+    background: linear-gradient(to right, #307f94 0%, #29abcd 55px, #29abcd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#307f94', endColorstr='#29abcd', GradientType=1 );
+    clip-path: polygon(70px 0, 0 0, 0px 30px);
+    height: 30px;
+    width: 70px; }
   .open-bar {
     z-index: 2;
     height: 68px;
@@ -102,6 +119,17 @@
         color: #104b5a; }
     .open-item-info__p {
       margin: 7px 0; }
+      .open-item-info__p .gold {
+        font-family: OpenSansLight;
+        color: #f2ca5b; }
+      .open-item-info__p .silver {
+        font-family: OpenSansLight;
+        color: #bebebe; }
+      .open-item-info__p .bronze {
+        font-family: OpenSansLight;
+        color: #cd7f32; }
+    .open-item-info__medal {
+      margin-bottom: -7px; }
     .open-item-avatar {
       flex: 1 1 230px; }
       .open-item-avatar img {
@@ -129,6 +157,48 @@
       letter-spacing: normal;
       text-align: left;
       color: #000000; }
+  .open-progressbar {
+    background: #90bfcf;
+    height: 69px;
+    width: 100%;
+    padding: 0;
+    margin: 5px auto;
+    position: relative; }
+    .open-progressbar__progress {
+      background: url(../../img/progressbg.jpg);
+      width: 40%;
+      height: 100%; }
+    .open-progressbar__span {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 5px;
+      margin: auto; }
+      .open-progressbar__span span.bold {
+        font-family: OpenSansExtraBold;
+        font-size: 30px;
+        color: #fff; }
+      .open-progressbar__span span.regular {
+        font-family: OpenSansRegular;
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase; }
+  .open-steambutton {
+    margin-top: 22px;
+    margin-bottom: 20px; }
+    .open-steambutton a {
+      background: #fce42a;
+      padding: 15px;
+      text-decoration: none; }
+      .open-steambutton a:hover {
+        background: #e8d11e; }
+    .open-steambutton__logo {
+      width: 40px;
+      margin-bottom: -5px; }
+    .open-steambutton__span {
+      font-family: OpenSansRegular;
+      font-size: 16px;
+      color: #000; }
   .open-avatar-img {
     position: relative; }
   .open-avatar__status {
@@ -142,30 +212,6 @@
       background: #bebebe; }
     .open-avatar__status.bronze {
       background: #cd7f32; }
-  .open-slider {
-    width: 100%; }
-    .open-slider__item {
-      width: 116px; }
-      .open-slider__item span {
-        display: block;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        opacity: 0.8;
-        font-family: OpenSansBold;
-        font-size: 20px;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.2;
-        letter-spacing: normal;
-        color: #ffffff; }
-        .open-slider__item span.gold {
-          background: #f2ca5b; }
-        .open-slider__item span.silver {
-          background: #bebebe; }
-        .open-slider__item span.bronze {
-          background: #cd7f32; }
   .open-stats {
     font-family: OpenSansRegular;
     color: #8c8c8b;

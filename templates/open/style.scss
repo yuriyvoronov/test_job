@@ -14,7 +14,8 @@ $bronze: #cd7f32;
     background: -ms-linear-gradient(left, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
     background: linear-gradient(to right, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#307f94', endColorstr='#29abcd', GradientType=1 );
-	&:after {
+	padding-bottom: 10px;
+	&:before {
     content: '';
   
     position: absolute;
@@ -23,7 +24,25 @@ $bronze: #cd7f32;
     
     border-top: 30px solid #fff;
     border-right: 70px solid transparent;
-	
+
+	}
+	&:after {
+    content: '';
+  
+	position: absolute;
+	bottom:-29px;
+		left: 0;
+    background: rgba(48,127,148,1);
+    background: -moz-linear-gradient(left, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(48,127,148,1)), color-stop(55px, rgba(41,171,205,1)), color-stop(100%, rgba(41,171,205,1)));
+    background: -webkit-linear-gradient(left, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+    background: -o-linear-gradient(left, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+    background: -ms-linear-gradient(left, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+    background: linear-gradient(to right, rgba(48,127,148,1) 0%, rgba(41,171,205,1) 55px, rgba(41,171,205,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#307f94', endColorstr='#29abcd', GradientType=1 );
+	clip-path: polygon(70px 0, 0 0, 0px 30px );
+	height: 30px;
+	width: 70px;
 	}
 	&-bar
 	{
@@ -133,8 +152,30 @@ $bronze: #cd7f32;
 			&__p
 			{
 				margin: 7px 0;
+				.gold
+				{
+					font-family: OpenSansLight;
+					color: $gold;
+				}
+				.silver
+				{
+					font-family: OpenSansLight;
+					color: $silver;
+				}
+				.bronze
+				{
+					font-family: OpenSansLight;
+					color: $bronze;
+				}
 			}
+			&__medal
+			{
+				margin-bottom: -7px;
+			}
+			
+			
 		}
+		
 		&-avatar
 		{
 			
@@ -161,6 +202,9 @@ $bronze: #cd7f32;
   				text-align: left;
   				color: #050099;			
 			}
+			
+			
+			
 		}
 		&__p
 		{
@@ -172,7 +216,69 @@ $bronze: #cd7f32;
   			letter-spacing: normal;
   			text-align: left;
   			color: #000000;
-
+			
+		}
+	}
+	&-progressbar
+	{
+		background: #90bfcf;
+		height: 69px;
+		width: 100%;
+		padding: 0;
+		margin: 5px auto;
+		position: relative;
+		&__progress
+		{
+			background: url(../../img/progressbg.jpg);
+			width: 40%;
+			height: 100%;
+		}
+		&__span
+		{
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			top: 5px;
+			margin:  auto;
+			span.bold
+			{
+				font-family: OpenSansExtraBold;
+				font-size: 30px;
+				color: #fff;
+			}
+			span.regular
+			{
+				font-family: OpenSansRegular;
+				font-size: 20px;
+				color: #fff;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&-steambutton
+	{
+		margin-top: 22px;
+		margin-bottom: 20px;
+		a
+		{
+			background: #fce42a;
+			padding: 15px;
+			text-decoration: none;
+			&:hover
+			{
+				background: #e8d11e;
+			}
+		}
+		&__logo
+		{
+			width: 40px;
+			margin-bottom: -5px;
+		}
+		&__span
+		{
+			font-family: OpenSansRegular;
+			font-size: 16px;
+			color: #000;
 		}
 	}
 	&-avatar
@@ -198,43 +304,6 @@ $bronze: #cd7f32;
 			&.bronze
 			{
 				background: $bronze;
-			}
-		}
-	}
-	&-slider
-	{
-		width: 100%;
-		&__item
-		{
-			width: 116px;
-			span
-			{
-				display: block;
-				width: 100%;
-				
-				position: absolute;
-				bottom: 0;
-				text-align: center;
-				opacity: 0.8;
-				font-family: OpenSansBold;
-  				font-size: 20px;  				
-  				font-style: normal;
-  				font-stretch: normal;
-  				line-height: 1.2;
-  				letter-spacing: normal;
-  				color: #ffffff;
-				&.gold
-				{
-					background: $gold;
-				}
-				&.silver
-				{
-					background: $silver;
-				}
-				&.bronze
-				{
-					background: $bronze;
-				}
 			}
 		}
 	}
