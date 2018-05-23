@@ -360,3 +360,54 @@ $bronze: #cd7f32;
 		}
 	}
 } 
+@media only screen and (max-width: 768px)
+{
+	.open
+	{
+		&-nav
+		{
+			padding-top: 130px;
+			h2,a
+			{
+				display: block;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+			
+		}
+		&-bar
+		{
+			margin-top: 0;
+			height: auto;
+			h2,a
+			{
+				display: inherit;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+		}
+		select
+		{
+			float: none;
+			width: 70%;
+			margin: auto;
+			display: block;
+			margin-bottom: 10px;
+		}
+	&-item
+	{
+		flex-direction: column;
+		&-content
+		{
+			width: 90%;
+		}
+	}
+		&-more
+	{
+		&__link
+		{
+			padding: 18px 50px;
+		}
+	}
+	}
+}

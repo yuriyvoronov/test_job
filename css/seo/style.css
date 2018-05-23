@@ -4,3 +4,7 @@
   color: #000;
   margin-top: 90px;
   margin-bottom: 115px; }
+
+@media only screen and (max-width: 768px) {
+  .seo {
+    margin-bottom: 0; } }

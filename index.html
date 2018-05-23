@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/flexboxgrid/dist/flexboxgrid.css" />
@@ -23,22 +24,24 @@
 	<header class="header">
 		<div class="container header-container">
 			<div class="row">
-			<div class="col-md-9">
+			<div class="col-md-9 col-xs-12 col-sm-12">
 				
 				<div class="header-container__logo">
 					<img src="img/logo.png" alt="">
 				</div>
 				<nav class="header-nav">
 					<ul>
-						<li><a href=""	class="header-nav__link">Как играть?</a></li>
-						<li><a href=""	class="header-nav__link">ЧаВо?</a></li>
-						<li><a href=""	class="header-nav__link">Розыгрыши</a></li>
-						<li><a href=""	class="header-nav__link">Контакты</a></li>
-						<li ><a href="" class="header-nav__search"><img src="img/search_icon.png" alt=""></a></li>
+					
+						<li class="header-nav__menu"><a href=""	class="header-nav__link">Меню <img src="img/bars.svg" alt=""></a></li>
+						<li class="header-nav__origin"><a href=""	class="header-nav__link">Как играть?</a></li>
+						<li class="header-nav__origin"><a href=""	class="header-nav__link">ЧаВо?</a></li>
+						<li class="header-nav__origin"><a href=""	class="header-nav__link">Розыгрыши</a></li>
+						<li class="header-nav__origin"><a href=""	class="header-nav__link">Контакты</a></li>
+						<li class="header-nav__origin"><a href="" class="header-nav__search"><span class=smartsearch>Поиск</span><img src="img/search_icon.png" alt=""></a></li>
 					</ul>
 				</nav>
 			</div>
-			<div class="col-md-3 header-steam">
+			<div class="col-md-3 col-sm-12 col-xs-12 header-steam">
 				<a href="" class="header-steam__link">
 					ВОЙТИ ЧЕРЕЗ STEAM
 				</a>
@@ -123,7 +126,7 @@
 	<section class="closed">
 		<div class="container closed-nav">
 			<div class="row">
-				<div class="col-md-offset-6 col-md-6">
+				<div class="col-md-offset-6 col-md-6 col-sm-12 col-xs-12">
 					<h2>Сортировать:</h2>
 					<a href=""class="selected">Закрытые</a>
 					<a href="">Новые</a>
@@ -132,17 +135,20 @@
 		</div>
 		</div>
 		<div class="container closed-bar">
+		<div class="row">
+			
 		
-		<div class="col-md-6">
+		<div class="col-md-6 col-sm-12 col-xs-12">
 			
 			<h2>Закрытые игры</h2>
 			<a href="">Все закрытые игры</a>
 		</div>
-		<div class="col-md-offset-2 col-md-4">
+		<div class="col-md-offset-2 col-md-4  col-sm-12 col-xs-12">
 			<select name="" id="">
 				<option value="all">Все</option>
 			</select>
 		</div>	
+		</div>
 		</div>
 		
 			
@@ -595,6 +601,8 @@
 	<section class="seo">
 		<div class="container">
 	<div class="row">
+		<div class="col-xs-12 col-sm-12 com-md-12">
+			
 			<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
 		<p>Откуда он появился?
 Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
@@ -604,15 +612,21 @@
 		<p>Где его взять?
 Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
 		</div>
+		</div>
 	</div>
 		
 	</section>
 	<footer class="footer">
-		<div class="container">
+		
+		
+			<div class="container">
 		<div class="row">
+				
+			
 			
 		
 			<div class="col-md-7 col-sm-12 footer-about">
+			<div class="footer-content">
 				<div class="footer-exit">
 					<a href="" class="footer-exit__icon"><img src="img/leave.svg" alt=""></a>
 				</div>
@@ -625,22 +639,29 @@
 						<li><a href="" class="footer-icons__leaf"><img src="img/leaf.svg" alt=""></a></li>
 					</ul>
 				</div>
+				
+					
 				<h2>Немного о нашем сайте</h2>
 				<p>Pay4win  — это большая рулетка игр, помогающая геймерам с всего мира покупать игры дешевле чем они стоят в стиме или на каких то других торговых площадка. Дальше не знаю, что писать...В общем, надеюсь макет вам понравится. </p>
 				<div class="footer-write">
 					<a href="" class="footer-write__link">Написать нам</a>
 				</div>
+				</div>
 			</div>
-			<div class="col-md-5 col-sm-12 footer-right">
+			<div class="col-md-5 col-sm-12 col-xs-12 footer-right">
 				<div class="box">
+					
 					<div class="row reverse">
+						
 						<div class="col-md-3">
 							<span class="footer-age">8+</span>
 						</div>
+					
 					</div>
 				</div>
 				<div class="box">
 					<div class="row reverse">
+					
 						<div class="col-md-7 footer-copyright">
 							<h3>
 								Copyright © 2017-2017
@@ -658,7 +679,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+			</div>
 		</div>
 		<div class="footer-bg">
 		</div>

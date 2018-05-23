@@ -251,3 +251,30 @@
         color: #fff;
         background: #30b5d8;
         transition: all 0.3s ease-in-out; }
+
+@media only screen and (max-width: 768px) {
+  .open-nav {
+    padding-top: 130px; }
+    .open-nav h2, .open-nav a {
+      display: block;
+      margin-bottom: 30px;
+      text-align: center; }
+  .open-bar {
+    margin-top: 0;
+    height: auto; }
+    .open-bar h2, .open-bar a {
+      display: inherit;
+      margin-bottom: 30px;
+      text-align: center; }
+  .open select {
+    float: none;
+    width: 70%;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px; }
+  .open-item {
+    flex-direction: column; }
+    .open-item-content {
+      width: 90%; }
+  .open-more__link {
+    padding: 18px 50px; } }

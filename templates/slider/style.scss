@@ -37,7 +37,8 @@
 	}
 	&-content
 		{
-			width: 962px;
+			max-width: 962px;
+			width: 65%;
 			padding: 27px 34px;
 			background-color: #29abcd;
 			margin: 181px auto 71px;
@@ -137,6 +138,16 @@
 			height: 100px;
 			background: url(../../img/thumb_bg_2.png);
 			
+		}
+	}
+}
+@media only screen and (max-width: 768px)
+{
+	.slider
+	{
+		&-thumbs
+		{
+			display: none;
 		}
 	}
 }
